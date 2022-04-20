@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="text"><span>Welcome Back</span></div>
+    <div class="account">
+        <div class="account__sign-up">
+            <h4>Không có tài khoản?</h4>
+            <p>Bạn chưa có tài khoản? Tạo ngay!</p>
+            <button onclick=handleSignIn()>Đăng ký</button>
+        </div>
+        <div class="account__form animaltion-right right " id="sign-up">
+            <form action="" class="sign-up d-none" id="form-sign-up">
+                <h3>Đăng ký</h3>
+                <input type="text" id="" name="username" class="btn" placeholder="User Name"><br>
+                <input type="text" id="" name="email"  class="btn" placeholder="Email"><br>
+                <input type="text" id="" name="password"  class="btn" placeholder="Password"><br><br>
+                <input type="button" value="sign up" class="button" />
+              </form>
+              <form action="" method="" class="login sign-up d-block" id="form-login">
+                <h3>Log in</h3>
+                <input type="text" id="" name="username" class="btn" placeholder="User Name"><br>
+                <input type="text" id="" name="password" class="btn" placeholder="Password"><br><br>
+                <input type="submit" value="Login"  class="button"/>
+                <a href="">Quên mật khẩu</a>
+              </form>  
+        </div>
+        <div class="account__login account__sign-up">
+            <h4>Có một tài khoản?</h4>
+            <p>Đăng nhập tại đây!</p>
+            <button onclick=handleLogin()>Đăng nhập</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
